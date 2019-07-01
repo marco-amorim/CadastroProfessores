@@ -26,60 +26,65 @@ public class TelaConsulta extends JFrame {
 		setTitle("Porcentagens");
 		setResizable(false);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 450, 300);
+		setBounds(100, 100, 600, 450);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 
 		JLabel lblPorcentagens = new JLabel("PORCENTAGENS");
-		lblPorcentagens.setFont(new Font("Tahoma", Font.BOLD, 14));
+		lblPorcentagens.setFont(new Font("Tahoma", Font.BOLD, 18));
 		lblPorcentagens.setHorizontalAlignment(SwingConstants.CENTER);
-		lblPorcentagens.setBounds(0, 11, 434, 29);
+		lblPorcentagens.setBounds(0, 11, 590, 50);
 		contentPane.add(lblPorcentagens);
 
 		JLabel lblPorcentagemDeIntegrais = new JLabel("Porcentagem de Integrais:");
-		lblPorcentagemDeIntegrais.setBounds(10, 70, 200, 14);
+		lblPorcentagemDeIntegrais.setFont(new Font("SansSerif", Font.PLAIN, 14));
+		lblPorcentagemDeIntegrais.setBounds(10, 100, 186, 30);
 		contentPane.add(lblPorcentagemDeIntegrais);
 
 		JLabel lblPorcentagemDeHoristas = new JLabel("Porcentagem de Horistas:");
-		lblPorcentagemDeHoristas.setBounds(10, 100, 200, 14);
+		lblPorcentagemDeHoristas.setFont(new Font("SansSerif", Font.PLAIN, 14));
+		lblPorcentagemDeHoristas.setBounds(10, 150, 200, 30);
 		contentPane.add(lblPorcentagemDeHoristas);
 
 		JLabel lblPorcentagemDeDoutores = new JLabel("Porcentagem de Doutores:");
-		lblPorcentagemDeDoutores.setBounds(10, 130, 186, 14);
+		lblPorcentagemDeDoutores.setFont(new Font("SansSerif", Font.PLAIN, 14));
+		lblPorcentagemDeDoutores.setBounds(10, 200, 186, 30);
 		contentPane.add(lblPorcentagemDeDoutores);
 
 		JLabel lblPorcentagemDeMestres = new JLabel("Porcentagem de Mestres:");
-		lblPorcentagemDeMestres.setBounds(10, 160, 186, 14);
+		lblPorcentagemDeMestres.setFont(new Font("SansSerif", Font.PLAIN, 14));
+		lblPorcentagemDeMestres.setBounds(10, 250, 190, 30);
 		contentPane.add(lblPorcentagemDeMestres);
 
 		JLabel lblPorcentagemDeEspecialistas = new JLabel("Porcentagem de Especialistas:");
-		lblPorcentagemDeEspecialistas.setBounds(10, 190, 200, 14);
+		lblPorcentagemDeEspecialistas.setFont(new Font("SansSerif", Font.PLAIN, 14));
+		lblPorcentagemDeEspecialistas.setBounds(10, 300, 200, 30);
 		contentPane.add(lblPorcentagemDeEspecialistas);
 
 		labelPrcntIntegral = new JLabel("");
-		labelPrcntIntegral.setBounds(220, 70, 48, 14);
+		labelPrcntIntegral.setBounds(250, 100, 70, 30);
 		contentPane.add(labelPrcntIntegral);
 
 		labelPrcntHorista = new JLabel("");
-		labelPrcntHorista.setBounds(220, 100, 48, 14);
+		labelPrcntHorista.setBounds(250, 150, 70, 30);
 		contentPane.add(labelPrcntHorista);
 
 		labelPrcntDoutor = new JLabel("");
-		labelPrcntDoutor.setBounds(220, 130, 48, 14);
+		labelPrcntDoutor.setBounds(250, 200, 70, 30);
 		contentPane.add(labelPrcntDoutor);
 
 		labelPrcntMestre = new JLabel("");
-		labelPrcntMestre.setBounds(220, 160, 48, 14);
+		labelPrcntMestre.setBounds(250, 250, 70, 30);
 		contentPane.add(labelPrcntMestre);
 
 		labelPrcntEspecialista = new JLabel("");
-		labelPrcntEspecialista.setBounds(220, 190, 48, 14);
+		labelPrcntEspecialista.setBounds(250, 300, 70, 30);
 		contentPane.add(labelPrcntEspecialista);
 
 		btnVoltar = new JButton("Voltar");
-		btnVoltar.setBounds(313, 227, 89, 23);
+		btnVoltar.setBounds(450, 350, 100, 30);
 		contentPane.add(btnVoltar);
 	}
 

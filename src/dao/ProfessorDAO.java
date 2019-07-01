@@ -14,8 +14,6 @@ import entities.Professor;
 public class ProfessorDAO {
 
 	Connection conn = null;
-	boolean existeNoBanco = false;
-	boolean alteracaoFeita = false;
 
 	public void incluiProfessor(Professor prof) {
 
@@ -43,8 +41,7 @@ public class ProfessorDAO {
 
 			DB.closeStatement(st);
 		} catch (SQLException e1) {
-			JOptionPane.showMessageDialog(null, "Por favor, preencha todos os campos corretamente!",
-					"Campos incorretos", JOptionPane.WARNING_MESSAGE);
+
 		}
 
 	}

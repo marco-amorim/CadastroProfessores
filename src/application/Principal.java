@@ -24,7 +24,7 @@ public class Principal {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					TelaCadastroController tlc = new TelaCadastroController();
+					new TelaCadastroController();
 
 				} catch (Exception e) {
 					e.printStackTrace();
