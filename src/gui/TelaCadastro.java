@@ -1,8 +1,6 @@
 package gui;
 
 import java.awt.Font;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
 import javax.swing.JButton;
 import javax.swing.JComboBox;
@@ -99,18 +97,12 @@ public class TelaCadastro extends JFrame {
 		contentPane.add(btnCadastrar);
 
 		btnFinalizar = new JButton("Finalizar");
-		btnFinalizar.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				dispose();
-			}
-		});
 		btnFinalizar.setBounds(450, 350, 100, 30);
 		contentPane.add(btnFinalizar);
 
 		btnConsulta = new JButton("Consulta");
 		btnConsulta.setBounds(450, 300, 100, 30);
 		contentPane.add(btnConsulta);
-		
 
 	}
 
@@ -146,5 +138,4 @@ public class TelaCadastro extends JFrame {
 		return btnConsulta;
 	}
 
-	
 }

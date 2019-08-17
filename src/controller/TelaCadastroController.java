@@ -3,6 +3,7 @@ package controller;
 import javax.swing.JOptionPane;
 
 import dao.ProfessorDAO;
+import db.DB;
 import entities.Professor;
 import gui.TelaCadastro;
 
@@ -18,6 +19,7 @@ public class TelaCadastroController {
 		tlc.setLocationRelativeTo(null);
 		botaoCadastrar();
 		botaoConsulta();
+		botaoFinalizar();
 	}
 
 	public void botaoConsulta() {
@@ -43,6 +45,17 @@ public class TelaCadastroController {
 						"Campos incorretos", JOptionPane.WARNING_MESSAGE);
 			}
 			dao.incluiProfessor(prof);
+			tlc.dispose();
+			new TelaCadastroController();
+		});
+
+	}
+
+	public void botaoFinalizar() {
+		tlc.getBtnFinalizar().addActionListener(e -> {
+			tlc.dispose();
+			DB.closeConnection();
+			System.out.println("Conexao com o banco encerrada");
 		});
 	}
 
